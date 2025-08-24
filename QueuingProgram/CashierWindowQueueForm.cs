@@ -22,13 +22,12 @@ namespace QueuingProgram
         {
             DisplayCashierQueue(CashierClass.CashierQueue);
         }
-            public void DisplayCashierQueue(IEnumerable CashierList)
+        public void DisplayCashierQueue(IEnumerable CashierList)
         {
             listCashierQueue.Items.Clear();
             foreach (Object obj in CashierList)
             {
                 listCashierQueue.Items.Add(obj.ToString());
-
 
             }
         }
@@ -37,5 +36,26 @@ namespace QueuingProgram
         {
 
         }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (CashierClass.CashierQueue.Count > 0)
+            {
+                // Alisin ang unang number sa pila.
+                CashierClass.CashierQueue.Dequeue();
+            }
+            else
+            {
+                MessageBox.Show("The queue is empty.");
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DisplayCashierQueue(CashierClass.CashierQueue);
+        }
     }
 }
+   
+
+
