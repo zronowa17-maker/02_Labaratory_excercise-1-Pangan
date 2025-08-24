@@ -16,5 +16,10 @@ namespace QueuingProgram
         {
             InitializeComponent();
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            DisplayCashierQueue(CashierClass.CashierQueue);
+        }
     }
 }
