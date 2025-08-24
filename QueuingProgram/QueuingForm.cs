@@ -3,9 +3,11 @@ namespace QueuingProgram
 {
     public partial class QueuingForm : Form
     {
+        private CashierClass cashier;
         public QueuingForm()
         {
             InitializeComponent();
+            cashier = new CashierClass();
 
         }
 
