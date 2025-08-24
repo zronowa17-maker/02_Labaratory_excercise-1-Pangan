@@ -35,13 +35,14 @@
             // 
             // btnCashier
             // 
+            btnCashier.BackColor = SystemColors.AppWorkspace;
             btnCashier.Font = new Font("Rockwell", 32.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCashier.Location = new Point(76, 132);
             btnCashier.Name = "btnCashier";
             btnCashier.Size = new Size(217, 157);
             btnCashier.TabIndex = 0;
             btnCashier.Text = "Cashier";
-            btnCashier.UseVisualStyleBackColor = true;
+            btnCashier.UseVisualStyleBackColor = false;
             // 
             // lblQueue
             // 
@@ -68,6 +69,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
             Controls.Add(label);
             Controls.Add(lblQueue);
