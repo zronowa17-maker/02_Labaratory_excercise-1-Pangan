@@ -43,6 +43,7 @@
             btnCashier.TabIndex = 0;
             btnCashier.Text = "Cashier";
             btnCashier.UseVisualStyleBackColor = false;
+            btnCashier.Click += btnCashier_Click;
             // 
             // lblQueue
             // 
@@ -53,7 +54,6 @@
             lblQueue.Size = new Size(181, 59);
             lblQueue.TabIndex = 1;
             lblQueue.Text = "P-10007";
-            lblQueue.Click += this.lblQueue_Click;
             // 
             // label
             // 
