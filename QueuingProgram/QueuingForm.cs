@@ -1,8 +1,8 @@
 namespace QueuingProgram
 {
-    public partial class Form1 : Form
+    public partial class QueuingForm : Form
     {
-        public Form1()
+        public QueuingForm()
         {
             InitializeComponent();
         }

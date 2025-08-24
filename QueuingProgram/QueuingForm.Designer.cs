@@ -1,6 +1,6 @@
 ﻿namespace QueuingProgram
 {
-    partial class Form1
+    partial class QueuingForm
     {
         /// <summary>
         ///  Required designer variable.
