@@ -75,6 +75,7 @@
             Controls.Add(btnRefresh);
             Name = "CashierWindowQueueForm";
             Text = "CashierWindowQueueForm";
+            Load += CashierWindowQueueForm_Load;
             ResumeLayout(false);
         }
 
