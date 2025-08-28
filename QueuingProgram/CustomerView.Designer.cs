@@ -29,23 +29,35 @@
         private void InitializeComponent()
         {
             LblNowServing = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
             // LblNowServing
             // 
             LblNowServing.AutoSize = true;
-            LblNowServing.Location = new Point(295, 197);
+            LblNowServing.Font = new Font("Rockwell", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblNowServing.Location = new Point(188, 205);
             LblNowServing.Name = "LblNowServing";
-            LblNowServing.Size = new Size(87, 15);
+            LblNowServing.Size = new Size(0, 72);
             LblNowServing.TabIndex = 0;
-            LblNowServing.Text = "LblNowServing";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Rockwell", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(30, 84);
+            label1.Name = "label1";
+            label1.Size = new Size(331, 54);
+            label1.TabIndex = 1;
+            label1.Text = "*Now Serving";
             // 
             // CustomerView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1051, 450);
+            Controls.Add(label1);
             Controls.Add(LblNowServing);
             Name = "CustomerView";
             Text = "CustomerView";
@@ -57,5 +69,6 @@
 
         private Label lblNowServing;
         private Label LblNowServing;
+        private Label label1;
     }
 }
