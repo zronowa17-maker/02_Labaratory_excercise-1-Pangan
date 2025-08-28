@@ -15,12 +15,22 @@ namespace QueuingProgram
 
         public static string CashierGeneratedNumber(string CashierNumber)
         {
-            x++; 
+            x++;
             CashierNumber = CashierNumber + x.ToString();
             return CashierNumber;
         }
+        public static event Action OnQueueChanged;
+        internal static string DequeueNumber()
+        {
+            if (CashierQueue.Count > 0)
+            {
+                return CashierQueue.Dequeue();
+            }
+            return null;
+        }
     }
-}
+    }
+
 
 
 

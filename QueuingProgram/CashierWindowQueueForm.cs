@@ -39,10 +39,16 @@ namespace QueuingProgram
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            if (CashierClass.CashierQueue.Count > 0)
+                string nowServingNumber = CashierClass.DequeueNumber();
+
+            if (nowServingNumber != null)
             {
-                // Alisin ang unang number sa pila.
-                CashierClass.CashierQueue.Dequeue();
+                // Open the CustomerView if not yet visible
+                CustomerView.Instance.Show();
+                CustomerView.Instance.BringToFront();
+
+                // Update the display
+                CustomerView.Instance.UpdateNowServing(nowServingNumber);
             }
             else
             {

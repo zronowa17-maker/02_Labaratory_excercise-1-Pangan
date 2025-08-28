@@ -23,5 +23,10 @@ namespace QueuingProgram
             CashierWindowQueueForm queueForm = new CashierWindowQueueForm();
             queueForm.Show();
         }
+
+        private void QueuingForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

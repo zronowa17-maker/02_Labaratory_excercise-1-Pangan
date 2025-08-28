@@ -28,7 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            LblNowServing = new Label();
             SuspendLayout();
+            // 
+            // LblNowServing
+            // 
+            LblNowServing.AutoSize = true;
+            LblNowServing.Location = new Point(295, 197);
+            LblNowServing.Name = "LblNowServing";
+            LblNowServing.Size = new Size(87, 15);
+            LblNowServing.TabIndex = 0;
+            LblNowServing.Text = "LblNowServing";
             // 
             // CustomerView
             // 
@@ -36,11 +46,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(LblNowServing);
             Name = "CustomerView";
             Text = "CustomerView";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblNowServing;
+        private Label LblNowServing;
     }
 }
